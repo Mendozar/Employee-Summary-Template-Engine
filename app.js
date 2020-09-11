@@ -74,6 +74,56 @@ async function start(){
             email = data.email;
         });
 
+        // Switch Case depending on the title of the employee
+        switch (title){
+            case "Manager":
+                await inquirer.prompt([
+                    {
+                        type: "input",
+                        message: "What is your Manager's Office Number?",
+                        name: "officeNo"
+                    }
+                ]).then((data) => {
+                    const manager = new Manager(name, id, email, data.officeNo);
 
+                    // Reads and places HTML from manager.html in teamMember.
+                    teamMember = fs.readFileSync("templates/manager.html");
+
+                    // Append the the teamMember string to the teamHTML.
+                    teamHTML = teamHTML + "\n" + eval('`'+ teamMember +'`');
+                });
+                break;
+
+            // Intern
+            case "Intern":
+                await inquirer.prompt([
+                    {
+                        type: "input",
+                        message: "What University is your Intern attending?",
+                        name: "school"
+                    }
+                ]).then((data) => {
+                    const intern = new Intern(name, id, email, data.school);
+                    teamMember = fs.readFileSync("templates/intern.html");
+                    teamHTML = teamHTML + "\n" + eval('`'+ teamMember +'`');
+                });
+                break;
+
+            // Engineer
+            case "Engineer":
+                await inquirer.prompt([
+                    {
+                        type: "input",
+                        message: "What is your Engineer's GitHub?",
+                        name: "github"
+                    }
+                ]).then((data) => {
+                    const engineer = new Engineer(name, id, email, data.github);
+                    teamMember = fs.readFileSync("templates/engineer.html");
+                    teamHTML = teamHTML + "\n" + eval('`'+ teamMember +'`');
+                });
+                break;
+        }
+    }
 
 start();
