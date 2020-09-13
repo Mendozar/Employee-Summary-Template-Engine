@@ -1,0 +1,25 @@
+{
+  "name": "employee-summary-template-engine",
+  "version": "1.0.0",
+  "description": "A CLI for building a team page that shows team members.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mendozar/Employee-Summary-Template-Engine.git"
+  },
+  "keywords": [
+    "N/A"
+  ],
+  "author": "Rudy Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mendozar/Employee-Summary-Template-Engine/issues"
+  },
+  "homepage": "https://github.com/Mendozar/Employee-Summary-Template-Engine#readme"
+}

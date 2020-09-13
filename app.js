@@ -126,4 +126,21 @@ async function start(){
         }
     }
 
+    // Read the main.html and store in teamHTML.
+    const mainHTML = fs.readFileSync("templates/main.html");
+    teamHTML = eval('`'+ mainHTML +'`');
+
+    // write file to new team.html file
+    fs.writeFile("output/team.html", teamHTML, function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Team page completed! Open output/team.html in your default browser to see your results.");
+      
+      });
+
+}
+
 start();
