@@ -10,19 +10,6 @@ https://www.youtube.com/watch?v=orQsw8PcLe0&feature=youtu.be
 ---
 Run `npm install` to install all dependencies
 
-## Folder Structure
----
-```
-lib/           // classes and helper code
-output/        // rendered output
-templates/     // HTML template(s)
-test/          // jest tests
-  Employee.test.js
-  Engineer.test.js
-  Intern.test.js
-  Manager.test.js
-app.js         // Runs the application
-```
 ## Instructions
 ---
 1. Run `node apps.js` in the CLI to start the application.
