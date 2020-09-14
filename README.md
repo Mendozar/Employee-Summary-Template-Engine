@@ -1,6 +1,10 @@
-# Employee Summary Webpage Engine
+# Employee Summary Template Engine
 ---
 This Node application will assist users by helping them create a landing page for their team.
+
+Link to video of working application:
+
+https://www.youtube.com/watch?v=orQsw8PcLe0&feature=youtu.be
 
 ## Installation
 ---
