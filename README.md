@@ -34,8 +34,8 @@ Run `npm install` to install all dependencies
 ---
 * [Inquirer](https://www.npmjs.com/package/inquirer) - for the CLI user interface.
 
-## Assignment Challenges
+## Comments on this assignment:
 ---
 ### Testing
 
-I was unable to get the testing to work.
+* I was unable to get the testing to work.
